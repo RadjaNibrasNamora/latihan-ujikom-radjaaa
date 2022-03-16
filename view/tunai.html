@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-blue-600 mx-20 my-24">
+    <div class="mt-14">
+        <div class="text-3xl text-white text-center mt-12">
+            <h1>PILIH JUMLAH PAKET TUNAI</h1>
+        </div>
+
+        <div class="flex justify-center space-x-44 text-white text-3xl mt-12">
+            <div class="space-y-24">
+                <button onclick="seRatus()"><- 100.000</button><br>
+                <button onclick="duaRatus()"><- 200.000</button><br>
+                <button onclick="tigaRatus()"><- 300.000</button><br>
+                <button onclick="limaRatus()"><- 500.000</button><br>
+            </div>
+
+            <div class="space-y-24 text-right">
+                <button onclick="satuJuta()">1.000.0000 -></button><br>
+                <button onclick="satuJutaLimaratus()">1.500.0000 -></button><br>
+                <button onclick="duaJuta()">2.000.0000 -></button><br>
+                <a href="lainnya.html"><h1>TRANSAKSI LAINNYA</a>
+            </div>
+        </div>
+    </div>
+            </body>
+                <script>
+                    let uiambil = 'ambilkartu.html';
+                    let saldo = 5000000; 
+                    let paket = {
+                        seratus: '100000',
+                        duaratus: '200000',
+                        tigaratus: '300000',
+                        limaratus: '500000',
+                        satujuta: '1000000',
+                        satujutalimaratus: '1500000',
+                        duajuta: '2000000',
+                    };
+
+                    function seRatus() {
+                        let saldoakhir = saldo - paket.seratus;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open('ambilkartu.html', '_blank')
+                        window.close()
+                    }
+                    function duaRatus() {
+                        let saldoakhir = saldo - paket.duaratus;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                    function tigaRatus() {
+                        let saldoakhir = saldo - paket.tigaratus;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                    function limaRatus() {
+                        let saldoakhir = saldo - paket.limaratus;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                    function satuJuta() {
+                        let saldoakhir = saldo - paket.satujuta;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                    function satuJutaLimaratus() {
+                        let saldoakhir = saldo - paket.satujutalimaratus;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                    function duaJuta() {
+                        let saldoakhir = saldo - paket.duajuta;
+                        confirm(`Sisa Saldo Anda Rp.${saldoakhir}`)
+                        window.open(uiambil, '_blank')
+                        window.close()
+                    }
+                </script>
+            </div>
+        </div>
+    </div> 
+
+                
+</html>
